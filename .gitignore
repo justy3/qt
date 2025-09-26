@@ -1,0 +1,7 @@
+*pycache*
+.ipynb_checkpoint*
+build/
+qt.egg-info/
+qt.egg*
+*egg-info/*
+*.egg-info/
