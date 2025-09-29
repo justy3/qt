@@ -12,5 +12,6 @@ setup(
 			'*.csv',
 			'common/*',
 		]
-	}
+	},
+    install_requires=[]
 )
