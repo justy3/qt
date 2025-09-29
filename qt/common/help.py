@@ -4,7 +4,7 @@ import time
 import logging
 import requests
 import zipfile
-import urllib.requests
+import urllib.request
 import numpy as np
 import pandas as pd
 import datetime as dt
@@ -16,7 +16,7 @@ from pathlib import Path
 from functools import partial
 from typing import Optional, Literal, Union, Tuple, List, Dict
 from IPython.display import display, HTML
-from IPython.core.interactivesell import InteractiveShell
+from IPython.core.interactiveshell import InteractiveShell
 
 # disable warnings for InsecureEquest in HTTPS
 import urllib3
