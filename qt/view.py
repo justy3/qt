@@ -183,7 +183,7 @@ def view(df=None, url_columns=[], show_menu=True, **kw_aggrid):
 	}
 
 	defaults = dict(
-		column_fit = "auto",
+		columns_fit = "auto",
 		css_rules = css_rules,
 		export_mode = "disabled",
 		# export_csv = True,
