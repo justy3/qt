@@ -128,7 +128,7 @@ def view(df=None, url_columns=[], show_menu=True, **kw_aggrid):
 					"filter": "agSetColumnFilter",
 					"resizable": True,
 					"rowGroup" : False,
-					"sortable": False,
+					"sortable": True,
 					"width": 200,
 					"pinned": "left" if field == types.index[0] else None
 				}
