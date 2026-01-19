@@ -288,3 +288,13 @@ def view3(df, get_str=False, **kwargs):
 
 def fmt_dict(d: dict):
 	return json.dumps(d, indent=4, sort_keys=True)
+
+
+from IPython.core.display import HTML
+
+#Acceps a list of IpyTable objects and returns a table which contains each IpyTable in a cell
+def vc_counts(df, column_list=None):
+	if column_list is None:
+		column_list = df.columns.tolist()
+	table_list = [pd.DataFrame(df[c].value_counts()) for c in df.columns]
+	return HTML('<table>' +  ''.join(['<td>' + table._repr_html_() + '</td>' for table in table_list]) +'</tr></table>')
