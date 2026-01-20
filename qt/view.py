@@ -296,5 +296,5 @@ from IPython.core.display import HTML
 def vc_counts(df, column_list=None):
 	if column_list is None:
 		column_list = df.columns.tolist()
-	table_list = [pd.DataFrame(df[c].value_counts()) for c in df.columns]
+	table_list = [pd.DataFrame(df[c].value_counts()) for c in column_list]
 	return HTML('<table>' +  ''.join(['<td>' + table._repr_html_() + '</td>' for table in table_list]) +'</tr></table>')
