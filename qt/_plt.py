@@ -1,9 +1,16 @@
 import ipyaggrid
+import pandas as pd
 import ipywidgets as widgets
 import plotly.graph_objects as go
 import plotly.express as px
 
 from IPython.display import display, HTML
+
+def use_mp():
+	pd.options.plotting.backend = 'matplotlib'
+
+def use_pl():
+	pd.options.plotting.backend = 'plotly'
 
 def create_widget(plots, names=[], display_plot=True, mode="tab"):
 	# 3 modes are supported - tab/vbox/hbox
